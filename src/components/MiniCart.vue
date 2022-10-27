@@ -25,7 +25,7 @@
 
     <div class="d-flex justify-content-between">
       <span>Total: ${{ cartTotalPrice }}</span>
-      <a href="#" @click.prevent="clearCartItems()">Clear Cart</a>
+      <!-- <a href="#" @click.prevent="clearCartItems()">Clear Cart</a> -->
     </div>
   </div>
 </template>
