@@ -4,7 +4,9 @@
       <img class="w-100" src="https://via.placeholder.com/150x100" alt />
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#"> Product title </a>
+          <router-link :to="{ name: 'product', params: { id: 23 } }">
+            Product title</router-link
+          >
         </h4>
         <strong>$23</strong>
         <p class="card-text">Lorem ipsum dolor sit amet.</p>

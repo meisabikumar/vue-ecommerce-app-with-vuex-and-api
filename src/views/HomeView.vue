@@ -1,8 +1,5 @@
 <template>
-  <div class="container">
-    <!-- <h1>Home View</h1> -->
-    <ProductList />
-  </div>
+  <ProductList />
 </template>
 
 <script>
