@@ -4,10 +4,11 @@ const END_POINT = "http://localhost:5000/products";
 export default {
   state: {
     products: [],
-    product: {},
+    product: null,
   },
   getters: {
     allProducts: (state) => state.products,
+    product: (state) => state.product,
   },
   mutations: {
     setProducts: (state, products) => (state.products = products),
@@ -21,15 +22,9 @@ export default {
     },
 
     async fetchProduct({ commit }, productId) {
-      const response = await fetch(`${END_POINT}/${productId}`);
+      const response = await axios.get(`${END_POINT}/${productId}`);
       console.log(response.data);
       commit("setProduct", response.data);
     },
-
-    // getProduct({ commit }, productId) {
-    //   Product.show(productId).then((response) => {
-    //     commit("SET_PRODUCT", response.data);
-    //   });
-    // },
   },
 };
