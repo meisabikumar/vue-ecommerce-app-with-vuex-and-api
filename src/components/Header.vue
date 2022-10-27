@@ -19,7 +19,7 @@
             >
               0 Cart
             </button>
-            <div>
+            <div @click="$event.stopPropagation()">
               <mini-cart />
             </div>
           </div>
