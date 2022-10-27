@@ -241,38 +241,5 @@
       }
     }
   ],
-  "cart": [
-    {
-      "product": {
-        "id": 19,
-        "title": "Opna Women's Short Sleeve Moisture",
-        "price": 7.95,
-        "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and ",
-        "category": "women's clothing",
-        "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
-        "rating": {
-          "rate": 4.5,
-          "count": 146
-        }
-      },
-      "quantity": 1,
-      "id": 1
-    },
-    {
-      "product": {
-        "id": 15,
-        "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-        "price": 56.99,
-        "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece.",
-        "category": "women's clothing",
-        "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
-        "rating": {
-          "rate": 2.6,
-          "count": 235
-        }
-      },
-      "quantity": 2,
-      "id": 2
-    }
-  ]
+  "cart": []
 }
