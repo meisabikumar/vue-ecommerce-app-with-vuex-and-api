@@ -15,16 +15,29 @@
         <p class="card-text">{{ product.description }}</p>
       </div>
       <div class="px-4 pb-3">
-        <button class="btn btn-secondary">Add to Cart</button>
+        <button class="btn btn-secondary" @click="addToCart()">
+          Add to Cart
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapMutations, mapActions } from "vuex";
+
 export default {
   name: "ProductCard",
   props: ["product"],
+  methods: {
+    ...mapActions(["addProductToCart"]),
+    addToCart() {
+      this.addProductToCart({
+        product: this.product,
+        quantity: 1,
+      });
+    },
+  },
 };
 </script>
 

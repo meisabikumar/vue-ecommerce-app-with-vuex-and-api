@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { mapGetters, mapState, mapActions } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 export default {
   props: ["id"],
   data() {
@@ -29,11 +29,16 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["fetchProduct"]),
+    ...mapActions(["fetchProduct", "addProductToCart"]),
+    addToCart() {
+      this.addProductToCart({
+        product: this.product,
+        quantity: this.quantity,
+      });
+    },
   },
   computed: {
     ...mapGetters(["product"]),
-    // ...mapState(["product"]),
   },
   created() {
     this.fetchProduct(this.id);
